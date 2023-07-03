@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  pydantic-tutorial:
+    build: 
+      dockerfile: Dockerfile
+    command: ["tail -f /dev/null"]
+    volumes:
+      - ..:/pydantic-tutorial
